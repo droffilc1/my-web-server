@@ -19,6 +19,7 @@ const PORT = process.env.PORT || 5000;
 
 app.get('/api/hello', async (req, res) => {
   const visitorName = req.query.visitor_name || 'Visitor';
+  console.log(req.query);
 
   try {
     // Fetch the client's IP address
